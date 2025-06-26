@@ -1,7 +1,7 @@
 import { getProducts } from "./load-product.js"
 
 
-async function showProducts() {
+async function showProducts(id) {
     const products = await getProducts()
     const product = products.find(p => p.id === id);
     if (!products){
@@ -23,7 +23,7 @@ const overlayContainer = document.querySelector('.overlay.container');
 const signUpButton = document.querySelector('.signup-button');
 
 function dismissOverlay(){
-
+    
 }
 
 
